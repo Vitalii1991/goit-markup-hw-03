@@ -17,8 +17,15 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+.container {
+  width: 1128px;
+  margin-right: 12px;
+  margin-left: 12px;
+}
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .link {
   text-decoration: none;
@@ -30,6 +37,8 @@ body {
   letter-spacing: 0.03em;
 }
 .btn {
+  display: inline-block;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -83,9 +92,15 @@ body {
 
 .hero {
   background-color: var(--title-text-color);
+  text-align: center;
 }
 .hero-title {
   color: #ffffff;
+  background-color: tomato;
+
+  width: 494px;
+  margin: 0 auto 48px auto;
+  padding-top: 188px;
 
   font-weight: 700;
   font-size: 56px;
@@ -95,6 +110,9 @@ body {
 .hero-btn {
   background-color: var(--accent-color);
   color: #ffffff;
+
+  padding: 16px 32px;
+  margin-bottom: 188px;
 
   border: 0;
   border-radius: 4px;
@@ -187,6 +205,8 @@ body {
 .projects-btn {
   background-color: #e7e9fc;
   color: var(--accent-color);
+
+  padding: 12px 24px;
 
   border: 1px solid #e7e9fc;
   border-radius: 4px;
