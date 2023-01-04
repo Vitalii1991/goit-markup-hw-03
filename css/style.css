@@ -11,7 +11,7 @@ body {
   background-color: #ffffff;
   color: var(--primary-text-color);
 
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -21,6 +21,8 @@ body {
   width: 1128px;
   margin-right: 12px;
   margin-left: 12px;
+
+  outline: 3px solid tomato;
 }
 .list {
   list-style: none;
@@ -31,7 +33,7 @@ body {
   text-decoration: none;
 }
 .logo {
-  font-family: 'Raleway', cursive;
+  font-family: "Raleway", cursive;
   font-weight: 800;
   font-size: 18px;
   letter-spacing: 0.03em;
@@ -44,6 +46,9 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+}
+.text {
+  margin-bottom: 0;
 }
 
 /* ----- Top Line ----- */
@@ -93,14 +98,15 @@ body {
 .hero {
   background-color: var(--title-text-color);
   text-align: center;
+
+  padding-top: 188px;
+  margin-bottom: 120px;
 }
 .hero-title {
   color: #ffffff;
-  background-color: tomato;
 
   width: 494px;
   margin: 0 auto 48px auto;
-  padding-top: 188px;
 
   font-weight: 700;
   font-size: 56px;
@@ -122,6 +128,7 @@ body {
 /* ----- Features ----- */
 
 .features {
+  margin-bottom: 120px;
 }
 .visually-hidden {
   position: absolute;
@@ -137,24 +144,34 @@ body {
   overflow: hidden;
 }
 .features-list {
+  width: 264px;
+  margin-bottom: 120px;
 }
 .features-item {
 }
 .features-title {
   color: var(--title-text-color);
 
+  margin-top: 0;
+  margin-bottom: 8px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
 }
 .features-text {
+  margin-top: 0;
 }
 
 /* ----- Occupation ----- */
 
 .occupation {
+  margin-bottom: 120px;
+  text-align: center;
 }
 .occupation-title {
+  margin-top: 0;
+  margin-bottom: 72px;
 }
 .occupation-list {
 }
@@ -165,16 +182,36 @@ body {
 
 .team {
   background-color: #f4f4fd;
+
+  padding-top: 120px;
+  text-align: center;
 }
 .team-title {
+  margin-top: 0;
+  margin-bottom: 72px;
 }
 .team-list {
 }
 .team-item {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  width: 264px;
+  background-color: #fff;
+  padding-bottom: 32px;
+  margin-bottom: 10px;
+}
+.team img {
+  margin-bottom: 32px;
 }
 .team-title-name {
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 .team-text {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* ----- Footer ----- */
@@ -190,7 +227,6 @@ body {
 .footer-text {
   color: #e7e9fc;
 }
-
 
 /* +++++ Porfolio Style +++++ */
 
