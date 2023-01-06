@@ -1,12 +1,12 @@
-html {
-  box-sizing: border-box;
+/* основной цвет текста #434455 */
+/* цвет заголовков #2E2F42 */
+/* цвет акцент #4D5AE5 */
+:root {
+  --primary-text-color: #434455;
+  --title-text-color: #2e2f42;
+  --accent-color: #4d5ae5;
 }
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-* {
-  outline: 2px solid blue;
-}
+
 body {
   background-color: #ffffff;
   color: var(--primary-text-color);
@@ -16,24 +16,15 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-
-  width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* основной цвет текста #434455 */
-/* цвет заголовков #2E2F42 */
-/* цвет акцент #4D5AE5 */
-:root {
-
-  --primary-text-color: #434455;
-  --title-text-color: #2e2f42;
-  --accent-color: #4d5ae5;
 }
 .container {
-  width: 1128px;
+  width: 1152px;
+
   margin-right: auto;
   margin-left: auto;
+
+  padding-right: 12px;
+  padding-left: 12px;
 
   outline: 3px solid tomato;
 }
@@ -54,22 +45,22 @@ body {
 .btn {
   display: inline-block;
 
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-}
-.text {
-  margin-bottom: 0;
+
+  border: 1px solid transparent;
 }
 
 /* ----- Top Line ----- */
 
 .header {
 }
-.header-container {
-  padding: 15px 0;
+.header .container {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
   display: flex;
   justify-content: space-between;
 }
@@ -144,7 +135,6 @@ body {
 
   padding: 16px 32px;
 
-  border: 0;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -214,7 +204,8 @@ body {
   text-align: center;
 }
 .team .container {
-  padding: 120px 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
 } 
 .team-title {
   margin-top: 0;
@@ -225,12 +216,15 @@ body {
   justify-content: space-between;
 }
 .team-item {
+  background-color: #fff;
+  width: 264px;
+  
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-  width: 264px;
-  background-color: #fff;
+  
+  padding-bottom: 32px; 
 }
 .team img {
   margin-bottom: 32px;
