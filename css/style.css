@@ -67,10 +67,13 @@ body {
   display: flex;
 }
 .header-logo {
+  display: block;
+  margin-right: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  
   color: var(--title-text-color);
   line-height: 1.33;
-
-  margin-right: 76px;
 }
 .logo-accent {
   color: var(--accent-color);
@@ -78,12 +81,21 @@ body {
 .header-list {
   display: flex;
 }
-.header-item {
+/* .header-item {
+  margin-right: 40px;
+}
+.header-item:last-child{
+  margin-right: 0;
+} */
+.header-item:not(:last-child) {
   margin-right: 40px;
 }
 .header-link {
-  color: var(--title-text-color);
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 
+  color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -96,10 +108,17 @@ body {
 .contacts-list {
   display: flex;
 }
-.contacts-item .mail{
+/* .contacts-item:not(:last-child) {
   margin-right: 40px;
+} */
+.contacts-item + .contacts-item {
+  margin-left: 40px;
 }
 .contacts-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   color: var(--primary-text-color);
 }
 .contacts-link:hover,
@@ -110,11 +129,11 @@ body {
 /* ----- Hero ----- */
 
 .hero {
-  background-color: var(--title-text-color);
-  text-align: center;
-
   padding-top: 188px;
   padding-bottom: 188px;
+  
+  background-color: var(--title-text-color);
+  text-align: center;
 }
 .hero-title {
   color: #ffffff;
@@ -224,6 +243,7 @@ body {
   padding-bottom: 32px; 
 }
 .team img {
+  display: block;
   margin-bottom: 32px;
 }
 .team-title-name {
