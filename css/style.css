@@ -165,10 +165,13 @@ body {
 }
 .features-list {
   display: flex;
-  justify-content: space-between;
 }
 .features-item {
-  width: 264px;
+  width: calc(100% / 4);
+  margin-right: 24px;
+}
+.features-item:last-child {
+  margin-right: 0;
 }
 .features-title {
   color: var(--title-text-color);
@@ -295,7 +298,7 @@ body {
 }
 .projects-card-item {
   display: block;
-  width: 360px;
+  width: calc((100% - 48px) / 3);
   margin-right: 24px;
   margin-bottom: 48px;
   padding-bottom: 32px;
