@@ -56,11 +56,10 @@ body {
 /* ----- Top Line ----- */
 
 .header {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header .container {
-  padding-top: 15px;
-  padding-bottom: 15px;
-
   display: flex;
   justify-content: space-between;
 }
@@ -116,7 +115,6 @@ body {
 
   padding-top: 188px;
   padding-bottom: 188px;
-  margin-bottom: 120px;
 }
 .hero-title {
   color: #ffffff;
@@ -142,8 +140,8 @@ body {
 /* ----- Features ----- */
 
 .features {
-  margin-bottom: 120px;
-  text-align: left;
+  padding-top: 120px;
+  padding-bottom: 60px;
 }
 .visually-hidden {
   position: absolute;
@@ -183,7 +181,8 @@ body {
 /* ----- Occupation ----- */
 
 .occupation {
-  margin-bottom: 120px;
+  padding-top: 60px;
+  padding-bottom: 120px;
   text-align: center;
 }
 .occupation-title {
@@ -202,11 +201,9 @@ body {
 .team {
   background-color: #f4f4fd;
   text-align: center;
-}
-.team .container {
   padding-top: 120px;
   padding-bottom: 120px;
-} 
+}
 .team-title {
   margin-top: 0;
   margin-bottom: 72px;
@@ -242,7 +239,8 @@ body {
 
 .footer {
   background-color: var(--title-text-color);
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-logo {
   color: #f4f4fd;
