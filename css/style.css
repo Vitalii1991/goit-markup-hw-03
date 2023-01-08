@@ -1,6 +1,7 @@
 /* основной цвет текста #434455 */
 /* цвет заголовков #2E2F42 */
 /* цвет акцент #4D5AE5 */
+
 :root {
   --primary-text-color: #434455;
   --title-text-color: #2e2f42;
@@ -17,6 +18,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
 .container {
   width: 1152px;
 
@@ -26,38 +28,41 @@ body {
   padding-right: 12px;
   padding-left: 12px;
 
-  outline: 3px solid tomato;
+  /* outline: 3px solid green; */
 }
+
 .list {
-  list-style: none;
   margin: 0;
   padding: 0;
+  
+  list-style: none;
 }
+
 .link {
   text-decoration: none;
 }
+
 .logo {
   font-family: "Raleway", cursive;
   font-weight: 800;
   font-size: 18px;
   letter-spacing: 0.03em;
 }
+
 .btn {
   display: inline-block;
+  border: 1px solid transparent;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.04em;
-
-  border: 1px solid transparent;
+  letter-spacing: 0.04em;  
 }
 
 /* ----- Top Line ----- */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  border-bottom: 1px solid #E7E9FC;
 }
 .header .container {
   display: flex;
@@ -127,12 +132,14 @@ body {
   color: #ffffff;
 
   width: 494px;
-  margin: 0 auto 48px auto;
+  margin-top: 0;
+  margin-bottom: 48px;
+  margin-right: auto;
+  margin-left: auto;
 
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
 }
 .hero-btn {
   background-color: var(--accent-color);
@@ -174,11 +181,10 @@ body {
   margin-right: 0;
 }
 .features-title {
-  color: var(--title-text-color);
-
   margin-top: 0;
   margin-bottom: 8px;
-
+  
+  color: var(--title-text-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -209,10 +215,11 @@ body {
 /* ----- Team ----- */
 
 .team {
-  background-color: #f4f4fd;
-  text-align: center;
   padding-top: 120px;
   padding-bottom: 120px;
+  
+  background-color: #f4f4fd;
+  text-align: center;
 }
 .team-title {
   margin-top: 0;
@@ -223,15 +230,15 @@ body {
   justify-content: space-between;
 }
 .team-item {
-  background-color: #fff;
   width: 264px;
-  
+  padding-bottom: 32px; 
+
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   
-  padding-bottom: 32px; 
+  background-color: #fff;
 }
 .team img {
   display: block;
@@ -249,18 +256,23 @@ body {
 /* ----- Footer ----- */
 
 .footer {
-  background-color: var(--title-text-color);
   padding-top: 100px;
   padding-bottom: 100px;
+  
+  background-color: var(--title-text-color);
 }
 .footer-logo {
-  color: #f4f4fd;
+  display: inline-block;
+  margin-bottom: 16px;
 
+  color: #f4f4fd;
   line-height: 1.67;
 }
 .footer-text {
-  color: #e7e9fc;
   width: 264px;
+  margin: 0;
+
+  color: #e7e9fc;
 }
 
 /* +++++ Porfolio Style +++++ */
@@ -269,6 +281,7 @@ body {
 
 .projects {
   padding-top: 96px;
+  padding-bottom: 120px;
 }
 .projects-filter-list {
   display: flex;
@@ -279,13 +292,13 @@ body {
   margin-left: 24px;
 }
 .projects-btn {
-  background-color: #e7e9fc;
-  color: var(--accent-color);
-
   padding: 12px 24px;
 
   border: 1px solid #e7e9fc;
   border-radius: 4px;
+  
+  background-color: #e7e9fc;
+  color: var(--accent-color);
 }
 .projects-btn:hover,
 .projects-btn:focus {
@@ -327,5 +340,6 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 16px;
+
   color: var(--primary-text-color);
 }
