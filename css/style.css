@@ -230,7 +230,6 @@ body {
 }
 .team-item {
   width: 264px;
-  padding-bottom: 32px; 
 
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -238,6 +237,9 @@ body {
   border-radius: 0px 0px 4px 4px;
   
   background-color: #fff;
+}
+.team-item .description {
+  padding-bottom: 32px;
 }
 .team img {
   display: block;
